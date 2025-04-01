@@ -24,20 +24,20 @@ public class SpecialtyCoffee extends Coffee
   public double getPrice()
   {
     // we will edit in class
-    return 0.0;
+    return (super.getPrice() * 1.5);
   }
 
   // Method override of Coffee toString
   public String toString()
   {
-    // we will edit in class
-    return null;
+    return super.toString() + "with" + flavor;
   }
 
   // print a message that compares the prices of a regular Coffee
   // and a SpecialtyCoffee using both getPrice methods
   public void printPriceComparison()
   {
-
+      System.out.println("A regular coffee costs " + super.getPrice());
+      System.out.println("A speciality coffee costs " + this.getPrice());
   }
 }
