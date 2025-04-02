@@ -1,6 +1,10 @@
 public class ElectricCar extends Car {
 	// Complete the constructor
 	// Note we're reinterpreting "fuelLevel" as "batteryLevel"
+	public double getFuelLevel()
+	{
+		return super.getFuelLevel() / 100.0; //
+	}
 	public ElectricCar(String model, int batteryLevel)
 	{
 

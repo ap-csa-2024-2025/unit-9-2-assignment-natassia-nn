@@ -8,18 +8,24 @@ public class Company {
 	// Set missing values to null
 	public Company(String name)
 	{
-
+		this.name = name;
+		this.streetAddress = null;
+		this.city = null;
+		this.state = null;
 	}
 
 
 	public Company(String name, String streetAddress, String city, String state)
 	{
-
+		this.name = name;
+		this.streetAddress = streetAddress;
+		this.city = city;
+		this.state = state;
 	}
 
 	public String getName()
 	{
-		return null;
+		return name;
 	}
 
 	/** Should return a String of the form
